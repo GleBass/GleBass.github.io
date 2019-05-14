@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mirralise.location</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<a href="index.html"><img class="grapficlogo" src="img/logo.png" alt="Logo"></a>
+		</div>
+		<nav>
+			<div class="topnav" id="myTopnav">
+				<a href="index.html">HOME</a>
+				<a href="project.html">PROJECT</a>
+				<a href="blog.html">BLOG</a>
+				<a href="contact.html">CONTACT</a>
+				<a href="about.html">ABOUT</a>
+				<a href="services.html">SERVICES</a>
+				<a href="location.html">LOCATION</a>
+				<a id="menu" href="#" class="icon">&#9776;</a><!--&#9776; значок як у бургер меню -->
+			</div>
+		</nav>
+	</header>
+	<main>
+		<h1>Location</h1>
+		<div id="map"></div>
+	</main>
+
+	<footer>
+		<nav>
+			<a href="index.html">HOME</a>
+			<a href="project.html">PROJECT</a>
+			<a href="blog.html">BLOG</a>
+			<a href="contact.html">CONTACT</a>
+			<a href="about.html">ABOUT</a>
+			<a href="services.html">SERVICES</a>
+			<a href="location.html">LOCATION</a>
+		</nav>
+		<div class="logo">
+			<a href="index.html"><img class="grapficlogo" src="img/logo.png" alt=""></a>
+
+		</div>
+		<div class="social">
+			<a href="#"><img src="img/em.png" alt=""></a>
+			<a href="#"><img src="img/face.png" alt=""></a>
+			<a href="#"><img src="img/goo.png" alt=""></a>
+			<a href="#"><img src="img/inst.png" alt=""></a>
+			<a href="#"><img src="img/pint.png" alt=""></a>
+		</div>
+		<p>Web Deweloper: Zadorozhny Gleb</p>
+	</footer>
+
+
+
+ 	
+    <script>
+		// Initialize and add the map
+		function initMap() {
+  		var uluru = {lat: 50.415105, lng: 30.5211765};
+ 		 var map = new google.maps.Map(
+     	 document.getElementById('map'), {zoom: 11, center: uluru});  		
+ 		 var marker = new google.maps.Marker({position: uluru, map: map});
+ 		}
+ 		</script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZuonHMEJKr6uYdCK66X-1iTk_xhfhWDI&callback=initMap">
+    </script> 
+
+	<script src="script.js"></script>
+</body>
+</html>

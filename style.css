@@ -1,0 +1,404 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+li{
+	text-decoration: none;
+	list-style: none;
+}
+body{
+	font-family: 'Raleway', sans-serif;
+}
+.logo{
+	background: #000;
+	width: auto;
+	display: flex;/*Обявляєм картинку як  Flex контейнер*/
+	justify-content: center;/*Зміщаєм картинку на центр*/
+}
+.grapficlogo{
+	box-sizing: border-box;/*Адаптируєм картинку при max-width: 100% */
+	padding: 5px; 
+	max-width: 100%
+}
+nav{
+	margin: auto;
+	width: 800px;
+	height: 50px;
+}
+.topnav{
+	background: #fff;
+	font-size: 14px;
+	margin-top: 40px;
+}
+.topnav a{
+	color: #000;
+	text-align: center;
+	padding: 14px 16px 14px 27px;
+	font-size: 15px;
+}
+.topnav a:hover{
+	border-bottom: 2px solid #000;/*При наведенні на силку появляється підкреслення*/
+}
+.topnav .icon{
+	display: none;/*Сховали знак Бургер-меню*/
+}
+.mw-100{
+	max-width: 100%;/*робим зобареження web.jpg адаптивним*/
+}
+.advantages__container{
+	display: flex;
+	justify-content: center;/*Виравнювання блоків вдоль горизонтвльной оси*/
+}
+.advantages{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	width: 70%;
+	display: flex;/*блок з картинками став в ряд*/
+	justify-content: space-between;
+	text-align: center;
+	flex-wrap: wrap;
+}
+.advantages__items{
+	width: 30%;
+}
+footer{
+	width: 100%;
+	height: auto;
+	background: #000;
+	margin: 0 auto;
+	padding-top: 25px;
+	text-align: center; 
+}
+footer a{
+	color: white;
+	font-size: 14px;
+	margin-left: 14px;
+}
+footer p{
+	color: white;
+	padding-bottom: 6px;
+}
+footer nav a:hover{
+	border-bottom: 1px solid white;
+}
+.social img{
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+.social img:hover{
+	background: #494949;
+	border-radius: 50%;/**/
+}
+.gallery{
+	width: 85%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 50px;
+	margin-top: 20px;
+}
+.photo-itm{
+	width: 25%;
+}
+.photo-itm img{
+	box-sizing: border-box;
+	width: 97%;
+	height: 95%;
+}
+.photo-itm img:hover{
+	opacity: 0.6;
+}
+.blog-container{
+	background: #fafafa;
+	border-radius: 5px;
+	box-shadow: rgba(0,0,0,0.2) 0 4px 2px -2px;
+	font-weight: 100;
+	margin: 48px auto;
+	width: 46rem;
+}
+.blog-container a:hover{
+	border-color: #ff4d4d;
+	color: #ff4d4d;
+}
+.blog-cover{/*!!!!!!!!!!!!!!!!*/
+	background: url(../3/img/photo-blog.jpg);
+	background-size: cover;
+	border-radius: 5px 5px 0 0;
+	height: 15rem;
+	box-shadow: inset rgba(0,0,0,0.2) 0 64px 64px 16px;/*внутреняя тень*/ 
+}
+.blog-body{
+	margin: 0 auto;
+	width: 80%;
+}
+.blog-title h1 a{
+	color: #333;
+	font-weight: 100;
+}	
+.blog-text p{
+	color: #4d4d4d;
+}
+.blog-tags ul{
+	display: flex;
+	flex-direction: row;/*направления раскладки блоков(у нас в линию)*/
+	flex-wrap: wrap;
+	list-style: none;
+	padding-left: 0;
+}
+.blog-tags li + li{
+	margin-left: 0.5rem;
+}
+.blog-tags a{
+	border: 1px solid #999999;
+	border-radius: 3px;
+	color: #999999;
+	font-size: 0.75rem;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	letter-spacing: 1px;/*Отступы между буквами*/
+	padding: 0 0.5rem;
+	text-align: center;
+	text-transform: uppercase;
+	white-space: nowrap;/*Без переноса*/
+	width: 5rem;
+}
+.blog-footer{
+	border-top: 1px solid #e6e6e6;
+	margin: 0 auto;
+	padding-bottom: 0.125rem;
+	width: 100%;
+}
+.blog-footer ul{
+	list-style: none;
+	display: flex;
+	flex: row wrap;
+	justify-content: flex-end;
+	padding-left: 0;
+}
+.blog-footer li{
+	color: #999999;
+	font-size: 0.77rem;
+	height: 1.5rem;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+	white-space: nowrap;
+}
+.published-date{
+	padding: 0 0.5rem;
+	text-align: center;
+}
+#map{
+	margin-left: 5%;
+	width: 90%;
+	height: 400px;	
+}
+main h1{
+	margin-left: 5%;
+}
+.form{/*розмістили посередині*/
+	width: 50%;
+	margin: 50px auto;
+}
+.feedback-input{
+	color: #000;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 22px;/*Висота строки(без висоти букв)*/
+	background: #fff;
+	padding: 13px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	border: 0px solid transparent;
+	border-bottom: 1px solid #000;
+}
+textarea{
+	width: 100%;
+	height: 150px;
+	resize: vertical;/*!!!!!!!!!!!!!!!!!!!!!!!*/
+}
+.button-submit{
+	float: left;
+	width: 100.3%;
+	border: 0px solid transparent;
+	cursor: pointer;
+	background-color: #000;
+	color: #fff;
+	font-size: 18px;
+	padding-top: 22px;
+	padding-bottom: 22px;
+	transition: all 0.3s;
+	margin-top: -4px;
+	font-weight: 300;
+}
+.button-submit:hover{
+	background-color: #fff;
+	color: #000;
+	border: 1px solid #fff;
+}
+.ease{
+	width: 0;
+	height: 74px;
+	background-color: #fbfbfb;
+	transition: 0.3s ease;
+}
+.about__container{
+	width: 80%;
+	margin: 50px auto;
+	
+}
+.about__container img{
+	max-width: 100%;
+}
+.about__container h2{	
+	margin-top: 35px;
+	text-align: center;
+}
+.about__container p{
+	margin-top: 50px;
+}
+.services{
+	width: 80%;
+	margin: 50px auto;
+	text-align: center;
+}
+.services img{
+	max-width: 100%;
+
+}
+.services__container{
+	margin-top: 50px;
+	display: grid;
+	grid-template-columns: auto auto; 
+	grid-gap: 50px 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+	.topnav a:not(:first-child){/*Скриваєм всі елементи крімі 1 (HOME)*/
+		display: none;
+	}
+	.topnav a.icon{
+		float: right;
+		margin-top: -17px;
+		display: block;
+		color: black;
+	}
+	nav{
+		width: 100%;
+		height: 69px;
+	}
+	.form {
+    width: 55%;
+    
+	}
+	.topnav.responsive{
+		position: relative;
+		
+	}
+	.topnav.responsive a.icon{
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.topnav.responsive a{
+		float: none;/*Розміщаєм силки в колонку*/
+		display: block;
+		text-align: left;
+	}
+	.advantages__items{
+		width: 45%;	
+	}
+	.photo-itm{
+		width: 47%;
+		margin-left: 12px;
+	}
+	.blog-container{
+		margin: -11px auto;
+		margin-bottom: 39px ;
+		width: 28rem;
+	}
+	.about__container{
+		margin-top: -17px;
+	}
+	.services{
+		margin-top: -17px;
+	}
+}
+@media screen and (max-width: 420px){
+	.advantages{
+		flex-direction: column;/*Направлення Flex елементов в колонку*/
+	}
+	.advantages__items{
+		width: 100%;	
+	}
+	.project{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.gallery{
+		width: auto;
+		margin: auto;
+	}
+	.photo-itm{
+		width: 70%;
+		margin: 0 auto;
+	}
+	.blog-container{	
+		width: 16rem;
+	}
+	
+
+}
+@media screen and (max-width: 486px){
+	.project{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 22px;
+	}
+	.gallery{
+		width: auto;
+		margin: auto;
+	}
+	.photo-itm{
+		width: 70%;
+		margin: 0 auto;
+	}
+}
+@media screen and (max-width: 570px){
+	.form {
+    width: 65%;
+	}
+	.services__container{
+	grid-template-columns: auto; 
+	}
+	.services{
+	margin-top: -38px;
+	}
+
+}
